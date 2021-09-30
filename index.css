@@ -6,7 +6,6 @@ body {
 /* css untuk table, td, th */
 table , td, th {
   position: relative;
-  overflow: auto;
   border: 2px solid #595959;
   border-collapse: collapse;
   background-color: white;
@@ -17,7 +16,6 @@ table , td, th {
 
 /* css untuk td dan th */
 td, th {
-  overflow: auto;
   padding: 20px;
   width: auto;
   height: auto;
