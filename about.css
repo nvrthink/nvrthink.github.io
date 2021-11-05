@@ -1,0 +1,16 @@
+.navbar-brand {
+    transform: translateX(-70%);
+    left: 50%;
+    position: absolute;
+  }
+
+.nav-item-media {
+    padding-left: 50px;
+}
+
+.navbar {
+    font-family: 'Lily Script One', cursive;
+}
+.lead {
+    font-size: 20px !important;
+}
