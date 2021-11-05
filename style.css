@@ -1,0 +1,89 @@
+body {
+    background-color: rgba(111, 78, 55, 0.6);
+}
+
+.navbar-brand {
+    transform: translateX(-70%);
+    left: 50%;
+    position: absolute;
+  }
+
+.nav-item-media {
+    padding-left: 50px;
+}
+
+.navbar {
+    font-family: 'Lily Script One', cursive;
+}
+
+.jumbotron {
+    background-image: url('svg/wave1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+
+}
+
+p {
+    font-family: 'Oleo Script', cursive;
+}
+
+.lead {
+    font-size: 20px !important;
+}
+
+h1, h2 {
+    font-family: 'Oleo Script', cursive;
+}
+
+.wavetop {
+    background-color: rgba(111, 78, 55, 0.6);
+    padding-bottom: 20px;
+}
+
+.pabout {
+    font-size: 25px !important;
+}
+
+#menus {
+    padding-top: 210px;
+    background-image: url('svg/wave2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutus {
+    background-image: url('svg/wave7.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7rem;
+    margin-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.panel {
+   margin-left: 150px;
+   padding-top: 130px;
+   margin-bottom: 50px;
+}
+
+.artic {
+    padding-top: 20px;
+    margin-top: 150px;
+
+    background-color: rgba(111, 78, 55, 0.6);
+    background-image: url('svg/wave6.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pworking {
+    font-size: 30px !important;
+}
