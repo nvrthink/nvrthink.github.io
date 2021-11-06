@@ -35,22 +35,15 @@ h1, h2 {
     font-family: 'Oleo Script', cursive;
 }
 
-#aboutus {
-    background-image: url('svg/wave3.svg');
-    background-color: rgba(111, 78, 55, 0.6);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 80px;
-   
-}
-
-.pabout {
-    font-size: 28px !important;
-    backdrop-filter: blur(10px);
+.menuimage:hover { 
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
 }
 
 footer {
+    margin-top: 300px;
     background-image: url('svg/wave11.svg');
     background-color: rgba(111, 78, 55, 0.6);
     background-position: center;
