@@ -18,11 +18,36 @@
     <title>Daftar Menu</title>
   </head>
   <body>
+    
+    <!-- Modal pop up -->
+    <div class="modal fade hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingin mendapatkan Voucher discount ?</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="mx-auto d-block" src="img/join.png" alt="" width="200">
+            <p class="fs-3">Segera daftar menjadi member iCoffe dan nantikan promo dan voucher discountnya</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <a class="btn btn-primary" href="form.html" role="button">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- end Modal pop up -->
+
     <div class="wavetop">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="backdrop-filter: blur(2px);">
         <div class="container">
         
-            <a class="navbar-brand1" href="#">
+            <a class="navbar-brand1" href="index.html">
                 <img src="cup.png" width="80" height="80" alt="">
               </a>
           <a class="navbar-brand fs-2" href="index.html">iCoffee</a>
@@ -68,7 +93,7 @@
                   <tr>
                         <th scope="row">1</th>
                         <td>
-                            <img id="image1" class="menuimage" src="menu/kopi1.jpg" alt="" width="100">
+                          <img id="image1" class="menuimage" src="menu/kopi1.jpg" alt="" width="100">
                         </td>
                         <td>Caramel Cookie Corn</td>
                         <td>Rp. 20.000</td>
@@ -146,6 +171,9 @@
             <p>
               <a href="#menus" class="text-black fs-5">Menu</a>
             </p>
+            <p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="text-black fs-5">Register</a>
+            </p>
           </div>
           <!-- Grid column -->
   
@@ -190,5 +218,7 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
       -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="menu.js"></script>
     </body>
   </html>

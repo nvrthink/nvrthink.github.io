@@ -50,3 +50,27 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Parallax */
+td {
+    opacity: 0;
+    transform: translate(0, 40px);
+    transition: 1s;
+}
+
+td.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+th {
+    opacity: 0;
+    transform: translate(0, 40px);
+    transition: 1s;
+}
+
+th.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* end */

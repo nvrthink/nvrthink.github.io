@@ -57,3 +57,50 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Parallax */
+#jumbo {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+#jumbo.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.imgKiri {
+    opacity: 0;
+    transform: translate(-40px, 0);
+    transition: 1s;
+}
+
+.imgKiri.nyala {
+    opacity: 1;
+    transform: translate(0 , 0);
+}
+
+.colP {
+    opacity: 0;
+    transform: translate(0, 60px);
+    transition: 1s;
+}
+
+.colP.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.imgKanan {
+    opacity: 0;
+    transform: translate(40px, 0);
+    transition: 1s;
+}
+
+.imgKanan.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* end Parallax */

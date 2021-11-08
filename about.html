@@ -18,11 +18,36 @@
   <title>About Us</title>
   </head>
   <body>
+
+    <!-- Modal pop up -->
+    <div class="modal fade hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingin mendapatkan Voucher discount ?</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="mx-auto d-block" src="img/join.png" alt="" width="200">
+            <p class="fs-3">Segera daftar menjadi member iCoffe dan nantikan promo dan voucher discountnya</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <a class="btn btn-primary" href="form.html" role="button">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- end Modal pop up -->
+
     <div class="wavetop">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="backdrop-filter: blur(2px);">
         <div class="container">
         
-            <a class="navbar-brand1" href="#">
+            <a class="navbar-brand1" href="index.html">
                 <img src="cup.png" width="80" height="80" alt="">
               </a>
           <a class="navbar-brand fs-2" href="#">iCoffee</a>
@@ -42,7 +67,7 @@
         </div>
       </nav>
        <!-- jumbotron -->
-       <div class="jumbotron text-center">
+       <div id="jumbo" class="jumbotron text-center">
 
         <h1 class="display-3 pb-3">About Us</h1>
         <p class="lead">Tak kenal maka tak sayang</p>
@@ -59,14 +84,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-2 d-none d-md-block">
+          <div class="imgKiri col-md-2 d-none d-md-block">
             <img src="img/hot-drink.png" alt="" width="200">
             <img src="img/coffeewithbeans.png" class="pt-5" alt="" width="200">
           </div>
-          <div class="col-md-8">
+          <div class="colP col-md-8">
             <p class="pabout">Kopi Indonesia merupakan salah satu kopi berkualitas yang ada saat ini. Bahkan sudah diakui oleh mancanegara, dan kopi merupakan salah satu minuman yang berkafien dan bermanfaat untuk kesehatan tubuh. iCoffee adalah tempat bagi para pecinta kopi menemukan surganya. Kami menyediakan kopi berkualitas premium dari berbagai daerah di Indonesia. Dengan memperkerjakan barista berpengalaman kami berharap bisa menciptakan cita rasa kopi yang terbaik dan memunculkan rasa baru dalam pengalaman pelanggan menikmati kopi. iCoffee Juga merupakan kedai kopi dengan brand lokal yang mengedepankan produk lokal, dan semua biji kopi yang digunakan dalam proses minuman kopi berasal dari dalam negeri. iCoffee hadir dengan konsep yang menarik, untuk menjangkau semua usia khususnya anak-anak muda agar mencintai kopi dan membiasakan budaya ngopi. iCoffee pun hadir dengan harga yang terjangkau agar dapat dinikmati oleh semua kalangan.</p>
           </div>
-          <div class="col-md-2 d-none d-md-block">
+          <div class="imgKanan col-md-2 d-none d-md-block">
             <img src="img/coffee-cup.png" alt="" width="180">
             <img src="img/coffee-beans.png" class="pt-5" alt="" width="200">
           </div>
@@ -106,8 +131,7 @@
                     <a href="#aboutus" class="text-black fs-5">About us</a>
                   </p>
                   <p>
-                    <a href="#menus" class="text-black fs-5">Menu</a>
-                    
+                    <a href="menu.html" class="text-black fs-5">Menu</a>
                   </p>
                   <p>
                     <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="text-black fs-5">Register</a>
@@ -144,5 +168,17 @@
           <!-- Copyright -->
         </footer>
 
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="about.js"></script>
   </body>
 </html>

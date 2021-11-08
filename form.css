@@ -36,6 +36,7 @@ h1, h2 {
 }
 
 footer {
+    padding-top: 60px;
     background-image: url('svg/wave11.svg');
     background-color: rgba(111, 78, 55, 0.6);
     background-position: center;
@@ -51,3 +52,49 @@ label {
 .form-check-label {
     font-size: 15px;
 }
+
+/* Parallax */
+#jumbo {
+    opacity: 0;
+    transform: translate(0.40px);
+    transition: 1s;
+}
+
+#jumbo.nyala{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+label {
+    opacity: 0;
+    transform: translate(-40px,0);
+    transition: 1s;
+}
+
+label.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+input {
+    opacity: 0;
+    transform: translate(40px,0);
+    transition: 1s;
+}
+
+input.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.pButton {
+    opacity: 0;
+    transform: translate(-40px,0);
+    transition: 1s;
+}
+
+.pButton.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* end */
