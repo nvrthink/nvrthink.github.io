@@ -1,0 +1,53 @@
+.navbar-brand {
+    transform: translateX(-70%);
+    left: 50%;
+    position: absolute;
+  }
+
+.nav-item-media {
+    padding-left: 50px;
+}
+
+
+.navbar {
+    font-family: 'Lily Script One', cursive;
+}
+.lead {
+    font-size: 20px !important;
+}
+
+.wavetop {
+    background-image: url('./svg/wave1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+}
+p {
+    font-family: 'Oleo Script', cursive;
+}
+
+.lead {
+    font-size: 20px !important;
+}
+
+h1, h2 {
+    font-family: 'Oleo Script', cursive;
+}
+
+footer {
+    background-image: url('svg/wave11.svg');
+    background-color: rgba(111, 78, 55, 0.6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    font-family: 'Oleo Script', cursive;
+    font-size: 27px;
+}
+
+.form-check-label {
+    font-size: 15px;
+}

@@ -2,7 +2,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="form.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/jpg" href="img/hot-drink.png"/>
 
@@ -15,7 +15,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>About Us</title>
+  <title>Pendaftaran</title>
   </head>
   <body>
     <div class="wavetop">
@@ -25,17 +25,17 @@
             <a class="navbar-brand1" href="#">
                 <img src="cup.png" width="80" height="80" alt="">
               </a>
-          <a class="navbar-brand fs-2" href="#">iCoffee</a>
+          <a class="navbar-brand fs-2" href="index.html">iCoffee</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link fs-2 text-black" href="#aboutus">About Us</a>
+                <a class="nav-link fs-2 text-black" href="about.html#aboutus">About Us</a>
               </li>
               <li class="nav-item-media">
-                <a class="nav-link fs-2 text-black" href="menu.html#menuss">Menu</a>
+                <a class="nav-link fs-2 text-black" href="index.html">Home</a>
               </li>
             </ul>
           </div>
@@ -44,38 +44,54 @@
        <!-- jumbotron -->
        <div class="jumbotron text-center">
 
-        <h1 class="display-3 pb-3">About Us</h1>
-        <p class="lead">Tak kenal maka tak sayang</p>
-        <p class="lead">Mari baca tentang kami</p>
+        <h1 class="display-3 pb-3">Join Us </h1>
+        <p class="lead">Ayo ikut member dapatkan discount</p>
+        <p class="lead">dan hadiah menarik lainnya</p>
       </div>
       <!-- end Jumbotron -->
     </div>
 
-    <section id="aboutus">
-      <div class="aboususc container">
-        <div class="row text-center">
-          <div class="col">
-            <h2 class="fs-1 pb-4">iCoffee</h2>
-          </div>
-        </div>
+    <div class="form">
+      <div class="container">
         <div class="row">
-          <div class="col-md-2 d-none d-md-block">
+          <div class="col-md-3 d-none d-md-block">
             <img src="img/hot-drink.png" alt="" width="200">
-            <img src="img/coffeewithbeans.png" class="pt-5" alt="" width="200">
           </div>
-          <div class="col-md-8">
-            <p class="pabout">Kopi Indonesia merupakan salah satu kopi berkualitas yang ada saat ini. Bahkan sudah diakui oleh mancanegara, dan kopi merupakan salah satu minuman yang berkafien dan bermanfaat untuk kesehatan tubuh. iCoffee adalah tempat bagi para pecinta kopi menemukan surganya. Kami menyediakan kopi berkualitas premium dari berbagai daerah di Indonesia. Dengan memperkerjakan barista berpengalaman kami berharap bisa menciptakan cita rasa kopi yang terbaik dan memunculkan rasa baru dalam pengalaman pelanggan menikmati kopi. iCoffee Juga merupakan kedai kopi dengan brand lokal yang mengedepankan produk lokal, dan semua biji kopi yang digunakan dalam proses minuman kopi berasal dari dalam negeri. iCoffee hadir dengan konsep yang menarik, untuk menjangkau semua usia khususnya anak-anak muda agar mencintai kopi dan membiasakan budaya ngopi. iCoffee pun hadir dengan harga yang terjangkau agar dapat dinikmati oleh semua kalangan.</p>
-          </div>
-          <div class="col-md-2 d-none d-md-block">
-            <img src="img/coffee-cup.png" alt="" width="180">
-            <img src="img/coffee-beans.png" class="pt-5" alt="" width="200">
-          </div>
+          <div class="col-md-9">
+          <form>
+            <div class="row pt-5 pb-4">
+              <label for="inputPassword4" class="pb-4">Name</label>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4" class="pb-4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+              </div>
+              <div class="form-group col-md-6 pt-4">
+                <label for="inputPassword4" class="pb-3"> Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+              </div>
+            </div>
+            <div class="form-group pt-3 pb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck" required>
+                  Apakah kamu setuju mendaftar ?
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L30,85.3C60,107,120,149,180,186.7C240,224,300,256,360,245.3C420,235,480,181,540,176C600,171,660,213,720,213.3C780,213,840,171,900,138.7C960,107,1020,85,1080,101.3C1140,117,1200,171,1260,170.7C1320,171,1380,117,1410,90.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
-    </section>
-
-
+    </div>
+    
         <!-- Footer -->
     
         <footer>
@@ -144,5 +160,18 @@
           <!-- Copyright -->
         </footer>
 
-  </body>
-</html>
+  
+  
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+    </body>
+  </html>

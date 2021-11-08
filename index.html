@@ -16,10 +16,36 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Welcome To iCoffee</title>
+  <title>Welcome To iCoffee</title>
   </head>
   <body>
+
+      <!-- Modal pop up -->
+        <div class="modal fade show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Ingin mendapatkan Voucher discount ?</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="mx-auto d-block" src="img/join.png" alt="" width="200">
+                  <p class="fs-3">Segera daftar menjadi member iCoffe dan nantikan promo dan voucher discountnya</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <a class="btn btn-primary" href="form.html" role="button">Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      <!-- end Modal pop up -->
+
     <div class="wavetop">
+      <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="backdrop-filter: blur(2px);">
         <div class="container">
         
@@ -42,9 +68,10 @@
           </div>
         </div>
       </nav>
+      <!-- end navbar -->
 
       <!-- jumbotron -->
-      <div class="jumbotron text-center">
+      <div id="jumbo" class="jumbotron text-center">
         <img class="pb-3" src="img/coffee.png" alt="" width="200">
         <h1 class="display-3 pb-3">Welcome To iCoffee</h1>
         <p class="lead">" People say money can’t buy happiness. They Lie.</p>
@@ -53,7 +80,7 @@
       <!-- end Jumbotron -->
       
     <!-- Panel -->
-  <div class="panel">
+  <div id="panel" class="panel">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-10">
@@ -87,7 +114,7 @@
   
     <!-- about us -->
     <section id="aboutus">
-      <div class="container">
+      <div class="aboutustrans container">
         <div class="row text-center">
           <div class="col">
             <h2 class="fs-1 pb-4">About Us</h2>
@@ -116,7 +143,7 @@
 
     <!-- article -->
     <div class="artic">
-        <div class="container">
+        <div class="artictrans container">
             <div class="row working">
               <div class="col-lg-3">
                 <img src="img/cafe.png" alt="coffee" class="figure-img img-fluid rounded" width="250">
@@ -124,7 +151,7 @@
             
               <div class="col-lg-5">
                 <h2 class="ms-1 fs-1">Nyaman dan Aman</h2>
-                <p class="pworking pt-4">Tempat yang cocok untuk kamu berkumpul dengan teman, keluarga, dan dengan orang yang istimewa</p>
+                <p class="pworking pt-4">Tempat yang cocok untuk kamu berkumpul dengan teman, keluarga, dan dengan orang yang istimewa.</p>
               </div>
             </div>
         </div>
@@ -133,11 +160,11 @@
 
     <!-- article -->
     <div class="artic2">
-      <div class="container">
+      <div class="artictrans2 container">
           <div class="row works">
             <div class="col-lg-8">
               <h2 class="ms-1 fs-1" style="color:black;">Biji Kopi berkualitas</h2>
-              <p class="pworking pt-4" style="color: black;">Tempat yang cocok untuk kamu berkumpul dengan teman, keluarga, dan dengan orang yang istimewa</p>
+              <p class="pworking pt-4" style="color: black;">Menggunakan biji kopi yang fresh sehingga lebih nikmat diminum.</p>
             </div>
             <div class="col-lg-3">
               <img src="img/beans.png" alt="coffee" class="figure-img img-fluid rounded" width="250">
@@ -151,7 +178,7 @@
 
     <!-- Menu List -->
     <section id="menus">
-      <div class="container mt-1">
+      <div class="menus container mt-1">
         <div class="row text-center">
           <h2 class="fs-1 pb-4">Menu List</h2>
         </div>
@@ -190,13 +217,11 @@
         </div>
       </div>
     </div>
-
-
-
     </section>
-
     
-    <!-- end -->
+    <!-- end Menu list-->
+
+
 
 
 
@@ -231,6 +256,10 @@
               </p>
               <p>
                 <a href="#menus" class="text-black fs-5">Menu</a>
+                
+              </p>
+              <p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="text-black fs-5">Register</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -265,15 +294,18 @@
     </footer>
 
 
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
   </body>
 </html>

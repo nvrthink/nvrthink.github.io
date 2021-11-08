@@ -1,3 +1,5 @@
+/* navbar */
+
 .navbar-brand {
     transform: translateX(-70%);
     left: 50%;
@@ -11,7 +13,9 @@
 .navbar {
     font-family: 'Lily Script One', cursive;
 }
+/* end navbar */
 
+/* jumbotron */
 .jumbotron {
     background-image: url('svg/wave1.svg');
     background-position: center;
@@ -20,10 +24,56 @@
     padding-top: 10rem;
 
 }
+/* end jumbotron */
+
+
+/* jumbotron Parallax */
+#jumbo {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+#jumbo.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* end Jumbotron parallax */
+
+/* Parallax Panel */
+#panel {
+    opacity: 0;
+    transform: translate(0, 80px);
+    transition: 1s;
+}
+
+#panel.nyala {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 1s;
+}
+
+/* end parallax panel */
 
 p {
     font-family: 'Oleo Script', cursive;
 }
+
+.aboutustrans {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+/* Parallax about us */
+.aboutustrans.nyala {
+    opacity: 1;
+    transform: translate(0,0);
+
+}
+/* end parallax about us */
+
 
 .lead {
     font-size: 20px !important;
@@ -42,6 +92,7 @@ h1, h2 {
     font-size: 25px !important;
 }
 
+/* Menu */
 #menus {
     padding-top: 210px;
     background-image: url('svg/wave10.svg');
@@ -49,7 +100,23 @@ h1, h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* end menu */
 
+
+/* Paralax Menu */
+.menus {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 2s;
+}
+
+.menus.nyala {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/* end paralax menu */
+
+/* About us */
 #aboutus {
     background-image: url('svg/wave10.svg');
     background-position: center;
@@ -61,13 +128,17 @@ h1, h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* end about us */
 
-
+/* Panel */
 .panel {
     padding-top: 130px;
     margin-bottom: 50px;
 }
+/* End panel */
 
+
+/* Article  */
 .artic {
     padding-top: 30px;
     margin-top: 120px;
@@ -77,18 +148,42 @@ h1, h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* end article */
+
+/* parallax article */
+.artictrans {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 2s;
+}
+.artictrans.nyala {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.artictrans2 {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 2s;
+}
+.artictrans2.nyala {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 .artic2 {
     background-color: rgba(111, 78, 55, 0.6);
     padding-top: 70px;
 }
 
+/* end parallax article */
 
 .pworking {
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: 25px !important;
 }
 
+/* footer */
 footer {
     margin-top: 200px;
     background-image: url('svg/wave9.svg');
@@ -96,3 +191,5 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* end footer */
