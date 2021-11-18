@@ -47,3 +47,48 @@ h5 {
 }
 
 /* end Jumbotron */
+
+/* Button */
+.btn:hover {
+    background-color: #061DAB !important;
+}
+
+.btn {
+    float: left;
+    margin-right: 20px;
+}
+/* end Button */
+
+/* Switch */
+  .switch-konten input {
+    display: none;
+  }
+  
+  .switch-konten,
+  .switch-konten span {
+    border-radius: 35px;
+    border-style: solid;
+    border-color: transparent;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    border-width: 2px;
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+  
+  .switch-konten input:checked+span+span,
+  .switch-konten input+span {
+    border-color: #444;
+    background-color: white;
+  }
+  
+  .switch-konten input+span+span,
+  .switch-konten input:checked+span {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+#paketwebhost, #paketwordpress{
+  display: none;
+}
+/* switch */
