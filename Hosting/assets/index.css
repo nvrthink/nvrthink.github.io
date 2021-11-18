@@ -1,0 +1,35 @@
+.nav-item-media {
+    padding-left: 50px;
+}
+
+.navbar {
+    font-family: 'Lily Script One', cursive;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url('svg/wave1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+}
+
+.juduljumbo {
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+}
+
+.pjumbo {
+    font-family: 'Oleo Script', cursive;
+    font-size: 34px ;
+}
+
+.pjumbo2 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* end Jumbotron */
