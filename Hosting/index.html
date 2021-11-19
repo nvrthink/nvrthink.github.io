@@ -84,7 +84,23 @@
                 <div class="row">
                     <div class="col d-flex justify-content-center">
 
-                        <label for="toggle" class="switch-konten">
+                        <!-- dropdown on sm -->
+                        <div class="dropdown d-md-none d-lg-block">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                             Pilih Paket
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li>
+                                <label for="toggle" class="switch-konten-dropdown">
+                                    <input class="toggle-button" id="toggle" type="checkbox" name="toggle" data-checked="paketwebhost" data-not-checked="paketwordpress">
+                                    <span>Paket Webhost</span> <br>
+                                    <span>Paket WordPress Hosting</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+
+                        <label for="toggle" class="switch-konten d-none d-md-block">
                             <input class="toggle-button" id="toggle" type="checkbox" name="toggle" data-checked="paketwebhost" data-not-checked="paketwordpress">
                             <span>Paket Webhost</span>
                             <span>Paket WordPress Hosting</span>
@@ -93,147 +109,52 @@
 
                     </div>
                 </div>
-        </div>
     </div>
     <!-- toggle -->
 
     <!-- Plan -->
 
     <!-- Paket web Hosting -->
-    <div class="background">
-    <div class="paket pt-5" id="paketwebhost">
-        <div class="paketanweb container">
-            <div class="row text-center">
-                <div class="col">
-                    <h2 class="judulpaket fs-1 pb-4">Pilih Paket Web Hosting</h2>
+    <div class="backgroundpaket">
+        <div class="paket pt-5" id="paketwebhost">
+            <div class="paketanweb container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2 class="judulpaket fs-1 pb-4">Pilih Paket Web Hosting</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center pt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Shared Hosting Single</h5>
-                            <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                            <h3 class="text-center">Rp 12,900/bln</h3>
+                <div class="row justify-content-center pt-4">
+                    <div class="col-md-4">
+                        <div class="card pt-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Shared Hosting Single</h5>
+                                <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
+                                <h3 class="text-center">Rp 12,900/bln</h3>
+                            </div>
+                            <ul class="list-group bg-transparent list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>1 Akun Email</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
+                                <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Domain Gratis</li>
+                                <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Google Ads Credit</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>2 Database</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                            </ul>
                         </div>
-                        <ul class="list-group bg-transparent list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>1 Akun Email</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
-                            <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Domain Gratis</li>
-                            <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Google Ads Credit</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>2 Database</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
-                        </ul>
                     </div>
-                </div>
-        
-                <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Shared Hosting Premium</h5>
-                        <p class="card-text text-center pt-2">Untuk website pribadi</p>
-                        <h3 class="text-center">Rp 23,900/bln</h3>
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
-                        <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSH Access</li>
-                      </ul>
-                    </div>
-                </div>
-        
-                <div class="col-md-4">
-                    <div class="card">
+            
+                    <div class="col-md-4 pt-3">
+                    <div class="card pt-3">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Shared Hosting Bisnis</h5>
-                            <p class="card-text text-center pt-2">Untuk bisnis kecil dan menengah</p>
-                            <h3 class="text-center">Rp 49,900/bln</h3>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>100 GB SSD Storage</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~100000 Kunjungan Bulanan</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Backup Harian (senilai Rp 124,548)</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>CDN Gratis (senilai Rp 108,709)</li>
-                        </ul>
-                    </div>
-                </div>
-
-              </div>
-        </div>
-
-    </div>
-
-    <!-- end paket Web Hosting -->
-
-    <!-- Wordpress Hosting -->
-    <div class="paket pt-5" id="paketwordpress">
-        <div class="paketanweb container">
-            <div class="row text-center">
-                <div class="col">
-                    <h2 class="judulpaket fs-1 pb-4">Pilih Paket WordPress Hosting</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Shared Hosting Single</h5>
-                            <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                            <h3 class="text-center">Rp 12,900/bln</h3>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>1 Akun Email</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
-                            <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Domain Gratis</li>
-                            <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Google Ads Credit</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>2 Database</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <div class="col-md-4">
-                    <div class="card borderless">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Shared Hosting Single</h5>
-                            <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                            <h3 class="text-center">Rp 12,900/bln</h3>
+                            <h5 class="card-title text-center">Shared Hosting Premium</h5>
+                            <p class="card-text text-center pt-2">Untuk website pribadi</p>
+                            <h3 class="text-center">Rp 23,900/bln</h3>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
@@ -251,48 +172,194 @@
                             <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
                             <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSH Access</li>
                         </ul>
-                    </div>
-                </div>
-        
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Shared Hosting Single</h5>
-                            <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                            <h3 class="text-center">Rp 12,900/bln</h3>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>100 GB SSD Storage</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~100000 Kunjungan Bulanan</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Backup Harian (senilai Rp 124,548)</li>
-                            <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>CDN Gratis (senilai Rp 108,709)</li>
-                        </ul>
+                    </div>
+            
+                    <div class="col-md-4 pt-3">
+                        <div class="card pt-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Shared Hosting Bisnis</h5>
+                                <p class="card-text text-center pt-2">Untuk bisnis kecil dan menengah</p>
+                                <h3 class="text-center">Rp 49,900/bln</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>100 GB SSD Storage</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~100000 Kunjungan Bulanan</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Backup Harian (senilai Rp 124,548)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>CDN Gratis (senilai Rp 108,709)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    <!-- end paket Web Hosting -->
+
+    <!-- Wordpress Hosting -->
+        <div class="paket pt-5" id="paketwordpress">
+            <div class="paketanweb container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2 class="judulpaket fs-1 pb-4">Pilih Paket WordPress Hosting</h2>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card pt-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Shared Hosting Single</h5>
+                                <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
+                                <h3 class="text-center">Rp 12,900/bln</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>1 Akun Email</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
+                                <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Domain Gratis</li>
+                                <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Google Ads Credit</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>2 Database</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4 pt-3">
+                        <div class="card borderless pt-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Shared Hosting Single</h5>
+                                <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
+                                <h3 class="text-center">Rp 12,900/bln</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSH Access</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4 pt-3">
+                        <div class="card pt-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Shared Hosting Single</h5>
+                                <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
+                                <h3 class="text-center">Rp 12,900/bln</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>100 GB SSD Storage</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~100000 Kunjungan Bulanan</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Backup Harian (senilai Rp 124,548)</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>CDN Gratis (senilai Rp 108,709)</li>
+                            </ul>
+                        </div>
+                    </div>
 
-              </div>
+                </div>
+            </div>
+
         </div>
-
+        <!-- End Paketan -->
     </div>
-    <!-- End Paketan -->
-        <div class="container">
-            <h1 class="terakhirpaket text-center pt-4">Temukan yang terbaik di DreamHost</h1>
-
-        </div>
-</div>
 
     <!-- end Plan -->
+    
+    <div class="article">
+        <div class="container">
+            <h1 class="terakhirpaket text-center pt-5">Temukan yang terbaik di DreamHost</h1>
+
+            <div class="row pt-5">
+                
+                <div class="col-md-6 ">
+                    <h3 class="pt-5 text-secondary">MUDAH DAN INTUITIF</h3>
+                    <h1 class="pt-3" style="font-family: 'Permanent Marker', cursive;">Kemudahan setup</h1>
+                    <p class="particle pt-4">Hanya dengan sekali klik, website Anda siap online. Dapatkan kemudahan untuk semua hal yang Anda butuhkan.</p>
+                
+                </div>
+
+                <div class="col-md-2 d-none d-md-block ps-5">
+                    
+                <img src="assets/gif/ezgif.com-gif-maker.gif" alt="Mudah setup" style="width: 450px;">
+                </div>
+            </div>
+
+             <div class="row pt-5"> 
+                    <div class="col-md-5 d-none d-md-block">
+
+                        <img src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
+                        
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <h3 class="pt-5 text-secondary">PERFORMA DAN KECEPATAN</h3>
+                        <h1 class="pt-3" style="font-family: 'Permanent Marker', cursive;">Kurangi waktu loading</h1>
+                        <p class="particle pt-4">Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.</p>
+
+                    </div>
+            </div> 
+            
+            <div class="row pt-5"> 
+                <div class="col-md-5 d-none d-md-block">
+
+                    <img src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
+                    
+                </div>
+
+                <div class="col-md-6">
+
+                    <h3 class="pt-5 text-secondary">PERFORMA DAN KECEPATAN</h3>
+                    <h1 class="pt-3" style="font-family: 'Permanent Marker', cursive;">Kurangi waktu loading</h1>
+                    <p class="particle pt-4">Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.</p>
+
+                </div>
+            </div>  
+
+            
+
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
