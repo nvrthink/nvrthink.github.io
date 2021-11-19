@@ -7,12 +7,12 @@ $(document).ready(function() {
   
     function toggle() {
       if (checkBoxes.prop("checked")) {
-        $('#paketwebhost').show('fast');
-        $('#paketwordpress').hide('fast');
+        $('#paketwordpress').show('fast');
+        $('#paketwebhost').hide('fast');
   
       } else {
-        $('#paketwebhost').hide('fast');
-        $('#paketwordpress').show('fast');
+        $('#paketwordpress').hide('fast');
+        $('#paketwebhost').show('fast');
       }
     }
   });
