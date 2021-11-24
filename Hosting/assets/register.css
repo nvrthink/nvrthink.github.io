@@ -1,0 +1,20 @@
+
+/* card */
+.card {
+    border: 3px solid black !important;
+    border-radius: 10px;
+    box-shadow: 10px 7px #101010;
+} 
+
+input {
+    border-color: black !important;
+    border-width:  1px !important;
+}
+/* end card */
+
+.btn {
+    box-shadow: 10px 3px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}

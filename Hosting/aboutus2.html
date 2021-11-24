@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Architects+Daughter&family=Playfair+Display:ital,wght@0,400;1,600&family=Mochiy+Pop+One&family=Oleo+Script&family=Anton&&family=Assistant:wght@200&family=Permanent+Marker&family=Balsamiq+Sans&family=Courgette&family=Oleo+Script&display=swap" rel="stylesheet">
+    
+    <!-- End Google Fonts -->
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- end Icon -->
+    <title>Welcome To Webhosting</title>
+  </head>
+  <body>
+    <!-- Modal Login -->
+
+    <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login To Your account</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="passFunc()">
+                    <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Modal Login -->
+
+  <!-- Navbar -->
+<div class="warptop">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="backdrop-filter: blur(2px);">
+    <!-- <div class="container"> -->
+        <a class="navbar-brand1 ps-5" href="#">
+                <img src="assets/img/logo.png" width="80" height="80" alt="Web logo">
+        </a>
+        <a class="navbar-brand text-black fs-2 ps-3" href="#">Dream Host</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link text-black fs-4 " href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item-media">
+                <a class="nav-link text-black fs-4" href="#menus">Menu</a>
+            </li>
+            <li class="nav-item dropdown fs-4">
+                <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login</a></li>
+                  <li><a class="dropdown-item" href="#">Register</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="text-black carticon navbar-brand" href="#">
+                    <i class="bi bi-cart3 ps-2 fs-2"></i>
+                    Cart
+                </a>
+                
+            </li>
+            </ul>
+            
+        </div>
+    <!-- </div> -->
+  </nav>
+  <!-- end Navbar -->
+
+
+  <!-- jumbotron -->
+  <div id="jumbo" class="jumbotron text-center pb-5">
+      <img class="imgjumbo img-fluid" src="assets/img/aboutus.png" alt="" width="200">
+      <h1 class="h1jumbo fs-1 pb-3">About Us</h1>
+      <p class="lead">This Website Created by us</p>
+      <h1 class="text-center pt-3">This is Us</h1>
+  </div>
+  <!-- end Jumbotron -->
+
+    <!-- About Us -->
+    <div class="aboutus">
+      <div class="container">
+        
+        <div class="row justify-content-md-center">
+          <div class="col">
+            <div class="text-center">
+            <img src="https://img.icons8.com/doodle/100/000000/user-male-circle.png"/>
+            <p>nama</p>
+            <p>npm</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="https://img.icons8.com/doodle/100/000000/user-male-circle.png"/>
+            <p>nama</p>
+            <p>npm</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <div class="text-center">
+            <img src="https://img.icons8.com/doodle/100/000000/user-male-circle.png"/>
+            <p>nama</p>
+            <p>npm</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="https://img.icons8.com/doodle/100/000000/user-female-circle.png"/>
+            <p>nama</p>
+            <p>npm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- end About Us -->
+
+ <!-- Footer -->
+  
+ <footer>
+    <section class="footersec">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="assets/img/web-hosting.png" alt="icon website" width="30" height="24" class="me-3">Dream Host
+            </h6>
+            <p class="fs-5">
+              Best Host, Super Duper Speed, 24 hours for you
+            </p>
+          </div>
+          <!-- Grid column -->
+
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="aboutus.html" class="text-black fs-5">About us</a>
+            </p>
+            <p>
+              <a href="#paket" class="text-black fs-5">Menu</a>
+              
+            </p>
+            <p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="text-black fs-5">Register</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><img src="assets/img/location.png" alt="logo alamat" width="30" height="24" class="me-3">Jl. Pakubuwono VI No.107, RT.11/RW.2, Gunung, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+            <p>
+              <img src="assets/img/email.png" alt="logo email" width="30" height="24" class="me-3">
+              info@mydreamhost.com
+            </p>
+            <p><img src="assets/img/telephone.png" alt="telephone icon" width="30" height="24" class="me-3"> + 01 234 567 88</p>
+            <p><img src="assets/img/telephone.png" alt="telephone icon" width="30" height="24" class="me-3"> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">Created By Kelompok </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="assets/aboutus.js"></script>
+</body>
+</html>

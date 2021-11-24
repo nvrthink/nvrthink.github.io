@@ -9,11 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- end Bootstrap CSS -->
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Architects+Daughter&family=Playfair+Display:ital,wght@0,400;1,600&family=Mochiy+Pop+One&family=Oleo+Script&family=Anton&family=Permanent+Marker&family=Courgette&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Architects+Daughter&family=Playfair+Display:ital,wght@0,400;1,600&family=Mochiy+Pop+One&family=Oleo+Script&family=Anton&&family=Assistant:wght@200&family=Permanent+Marker&family=Balsamiq+Sans&family=Courgette&family=Oleo+Script&display=swap" rel="stylesheet">
     
     <!-- End Google Fonts -->
 
@@ -24,27 +26,88 @@
   </head>
   <body>
 
+    <!-- Loading -->
+    <div class="loader-wrapper">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+    </div>
+
+    <!-- Loading -->
+
+
+    <!-- Modal Login -->
+
+    <div class="modal fade rounded" id="loginmodal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login To YOur account</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="passFunc()">
+                    <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Modal Login -->
+
+
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="backdrop-filter: blur(2px);">
-            <div class="container">
-                <a class="navbar-brand1" href="#">
-                    <img src="assets/img/logo.png" width="80" height="80" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #8ed1fcff;">
+            <!-- <div class="container"> -->
+                <a class="navbar-brand1 ps-5" href="#">
+                        <img src="assets/img/logo.png" width="80" height="80" alt="Web logo">
                 </a>
-            <a class="navbar-brand fs-2" href="#">Dream Host</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link fs-2 text-black" href="#aboutus">About Us</a>
-                </li>
-                <li class="nav-item-media">
-                    <a class="nav-link fs-2 text-black" href="#menus">Menu</a>
-                </li>
-                </ul>
-            </div>
-            </div>
+                <a class="navbar-brand fs-2 ps-3" href="#">Dream Host</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-4" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item-media">
+                        <a class="nav-link text-black fs-4" href="#paketwebhost">Price</a>
+                    </li>
+                    <li class="nav-item dropdown fs-4">
+                        <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login</a></li>
+                          <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="carticon navbar-brand" href="#">
+                            <i class="bi bi-cart3 ps-2 fs-2"></i>
+                            Cart
+                        </a>
+                        
+                    </li>
+                    </ul>
+                    
+                </div>
+            <!-- </div> -->
         </nav>
     <!-- end Navbar -->
 
@@ -58,16 +121,16 @@
                   <p class="pjumbo2">Kami memiliki banyak pilihan, jaminan waktu aktif 99,9%, sertifikat SSL gratis, pemasangan WordPress yang mudah, dan domain gratis selama setahun.</p>
                 </div>
 
-                <div class="col-md-1 d-none d-md-block">
-                    <img src="assets/img/hosting.png" alt="Hosting logo" width="200">
+                <div class="col-md-2 d-none d-md-block">
+                    <img class="hostingimg" src="assets/img/hosting.png" alt="Hosting logo" width="250">
                     
                 </div>
             </div>
 
-            <div class="buttonget pt-3">
+            <div class="buttonget pt-4">
                 <div class="row">
                     <div class="col">
-                        <a class="btn btn-lg" href="#" role="button">Ayo Mulai</a>
+                        <a class="btnmulai btn btn-lg" href="#" role="button">Ayo Mulai</a>
                         <h5>Mulai dari</h5>
                         <p class="hargastart">Rp. 12.900,00 / Bulan</p>
                     </div>
@@ -91,8 +154,8 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                               <li>
-                                <label for="toggle" class="switch-konten-dropdown">
-                                    <input class="toggle-button" id="toggle" type="checkbox" name="toggle" data-checked="paketwebhost" data-not-checked="paketwordpress">
+                                <label for="toggledrop" class="switch-konten-dropdown">
+                                    <input class="toggle-button" id="toggledrop" type="checkbox" name="toggledrop" data-checked="paketwebhost" data-not-checked="paketwordpress">
                                     <span>Paket Webhost</span> <br>
                                     <span>Paket WordPress Hosting</span>
                                 </label>
@@ -123,13 +186,14 @@
                         <h2 class="judulpaket fs-1 pb-4">Pilih Paket Web Hosting</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center pt-4">
-                    <div class="col-md-4">
-                        <div class="card pt-3">
-                            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
+                            <div class="card-body justify-content-center text-center">
                                 <h5 class="card-title text-center">Shared Hosting Single</h5>
                                 <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                                <h3 class="text-center">Rp 12,900/bln</h3>
+                                <h3 class="text-center pb-2">Rp 12,900/bln</h3>
+                                <a class="btnbuy btn btn-sm text-center mb-2" href="#" role="button">Masukan Keranjang</a>
                             </div>
                             <ul class="list-group bg-transparent list-group-flush">
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
@@ -149,12 +213,13 @@
                         </div>
                     </div>
             
-                    <div class="col-md-4 pt-3">
-                    <div class="card pt-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Shared Hosting Premium</h5>
-                            <p class="card-text text-center pt-2">Untuk website pribadi</p>
-                            <h3 class="text-center">Rp 23,900/bln</h3>
+                    <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shared Hosting Premium</h5>
+                            <p class="card-text pt-2">Untuk website pribadi</p>
+                            <h3 class="pb-2">Rp 23,900/bln</h3>
+                            <a class="btnbuy btn btn-sm text-center mb-2" href="#" role="button">Masukan Keranjang</a>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
@@ -175,12 +240,13 @@
                         </div>
                     </div>
             
-                    <div class="col-md-4 pt-3">
-                        <div class="card pt-3">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Shared Hosting Bisnis</h5>
-                                <p class="card-text text-center pt-2">Untuk bisnis kecil dan menengah</p>
-                                <h3 class="text-center">Rp 49,900/bln</h3>
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Shared Hosting Bisnis</h5>
+                                <p class="card-text pt-2">Untuk bisnis kecil dan menengah</p>
+                                <h3 class="pb-2">Rp 49,900/bln</h3>
+                                <a class="btnbuy btn btn-sm mb-2" href="#" role="button">Masukan Keranjang</a>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
@@ -218,8 +284,8 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <div class="card pt-3">
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Shared Hosting Single</h5>
                                 <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
@@ -243,8 +309,8 @@
                         </div>
                     </div>
             
-                    <div class="col-md-4 pt-3">
-                        <div class="card borderless pt-3">
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Shared Hosting Single</h5>
                                 <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
@@ -269,8 +335,8 @@
                         </div>
                     </div>
             
-                    <div class="col-md-4 pt-3">
-                        <div class="card pt-3">
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Shared Hosting Single</h5>
                                 <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
@@ -305,7 +371,9 @@
 
     <!-- end Plan -->
     
-    <div class="article">
+    <!-- Kelebihan -->
+
+    <div class="article justify-content-center ps-5">
         <div class="container">
             <h1 class="terakhirpaket text-center pt-5">Temukan yang terbaik di DreamHost</h1>
 
@@ -313,53 +381,145 @@
                 
                 <div class="col-md-6 ">
                     <h3 class="pt-5 text-secondary">MUDAH DAN INTUITIF</h3>
-                    <h1 class="pt-3" style="font-family: 'Permanent Marker', cursive;">Kemudahan setup</h1>
+                    <h1 class="pt-3">Kemudahan setup</h1>
                     <p class="particle pt-4">Hanya dengan sekali klik, website Anda siap online. Dapatkan kemudahan untuk semua hal yang Anda butuhkan.</p>
-                
+                    <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/ezgif.com-gif-maker.gif" alt="Mudah setup" style="width: 450px;">
                 </div>
 
-                <div class="col-md-2 d-none d-md-block ps-5">
+                <div class="col-md-6 d-none d-sm-none d-md-block">
                     
-                <img src="assets/gif/ezgif.com-gif-maker.gif" alt="Mudah setup" style="width: 450px;">
+                <img class="gif img-fluid" src="assets/gif/ezgif.com-gif-maker.gif" alt="Mudah setup" style="width: 450px;">
                 </div>
             </div>
 
-             <div class="row pt-5"> 
-                    <div class="col-md-5 d-none d-md-block">
+            <div class="pt-5">
+                <div class="row pt-5"> 
+                        <div class="col-md-6 d-none d-sm-none d-md-block">
 
-                        <img src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
-                        
-                    </div>
+                            <img class="gif img-fluid" src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
+                            
+                        </div>
 
-                    <div class="col-md-6">
+                        <div class="col-md-6">
 
-                        <h3 class="pt-5 text-secondary">PERFORMA DAN KECEPATAN</h3>
-                        <h1 class="pt-3" style="font-family: 'Permanent Marker', cursive;">Kurangi waktu loading</h1>
-                        <p class="particle pt-4">Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.</p>
+                            <h3 class="text-secondary">PERFORMA DAN KECEPATAN</h3>
+                            <h1>Kurangi waktu loading</h1>
+                            <p class="particle pt-4">Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.</p>
+                            <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
 
-                    </div>
-            </div> 
+                        </div>
+                </div> 
+            </div>
             
             <div class="row pt-5"> 
-                <div class="col-md-5 d-none d-md-block">
+                <div class="col-md-6">
 
-                    <img src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
+                    <h3 class="pt-5 text-secondary">PENGALAMAN WORDPRESS TERBAIK</h3>
+                        <h1 class="pt-3">WordPress Mudahkan Segalanya</h1>
+                        <p class="particle pt-4 fs-5">Install WordPress otomatis dengan tool 1-click installer dan mulailah membuat website. Untuk memastikan keandalan, keamanan, dan kecepatan web, backend WordPress dilengkapi dengan LiteSpeed caching dan tool optimasi tingkat lanjut.</p>
+
+                    <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/wordpressbuild.gif" alt="Wordpress Build" style="width: 500px;">
                     
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 d-none d-sm-none d-md-block">
 
-                    <h3 class="pt-5 text-secondary">PERFORMA DAN KECEPATAN</h3>
-                    <h1 class="pt-3" style="font-family: 'Permanent Marker', cursive;">Kurangi waktu loading</h1>
-                    <p class="particle pt-4">Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.</p>
+                    <img class="gif img-fluid" src="assets/gif/wordpressbuild.gif" alt="Wordpress Build" style="width: 500px;">
 
                 </div>
             </div>  
 
-            
+            <div class="pt-5">
+                <div class="row pt-5"> 
+                        <div class="col-md-6 d-none d-sm-none d-md-block">
+        
+                            <img class="gif img-fluid" src="assets/gif/revenue.gif" alt="Revenue" style="width: 450px;">
+                            
+                        </div>
+        
+                        <div class="col-md-6">
+        
+                            <h3 class="text-secondary">FLEKSIBEL DAN DAPAT DIUPGRADE</h3>
+                            <h1>Dari web sederhana hingga berskala besar</h1>
+                            <p class="particle pt-4">Masing-masing web dikelola dan dikembangkan dengan teknologi yang berbeda. Pilih paket hosting yang tepat, lalu upgrade seiring dengan perkembangan dan kebutuhan website.</p>
+                            <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/revenue.gif" alt="revenue" style="width: 450px;">
+        
+                        </div>
+                </div> 
+            </div>
 
         </div>
     </div>
+    <!-- end kelebihan -->
+
+
+     <!-- Footer -->
+    
+     <footer>
+        <section class="footersec">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <img src="assets/img/web-hosting.png" alt="icon website" width="30" height="24" class="me-3">Dream Host
+                </h6>
+                <p class="fs-5">
+                  Best Host, Super Duper Speed, 24 hours for you
+                </p>
+              </div>
+              <!-- Grid column -->
+  
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#aboutus" class="text-black fs-5">About us</a>
+                </p>
+                <p>
+                  <a href="#menus" class="text-black fs-5">Menu</a>
+                  
+                </p>
+                <p>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="text-black fs-5">Register</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><img src="assets/img/location.png" alt="logo alamat" width="30" height="24" class="me-3">Jl. Pakubuwono VI No.107, RT.11/RW.2, Gunung, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+                <p>
+                  <img src="assets/img/email.png" alt="logo email" width="30" height="24" class="me-3">
+                  info@mydreamhost.com
+                </p>
+                <p><img src="assets/img/telephone.png" alt="telephone icon" width="30" height="24" class="me-3"> + 01 234 567 88</p>
+                <p><img src="assets/img/telephone.png" alt="telephone icon" width="30" height="24" class="me-3"> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="#">Created By Kelompok 1</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -372,6 +532,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/index.js"></script>
   </body>

@@ -1,0 +1,45 @@
+/*  Navbar */
+
+.navbar {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: transparent;
+}
+/* End Navbar */
+
+/* Jumbotron */
+
+.warptop {
+    position: relative;
+    background-color: #8ed1fcff;
+    background-image: url('svg/wave6.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.jumbotron h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+}
+
+
+/* end Jumbotron */
+
+.col img {
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 200px;
+    background-image: url('svg/wavefooter.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* end Footer */

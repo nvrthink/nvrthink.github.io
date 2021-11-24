@@ -1,14 +1,9 @@
 
 /* Navbar */
 
-.nav-item-media {
-    padding-left: 50px;
-}
-
 .navbar {
-    font-family: 'Lily Script One', cursive;
+    font-family: 'Balsamiq Sans', cursive;
 }
-
 /* End Navbar */
 
 /* Jumbotron */
@@ -27,13 +22,15 @@
 }
 
 .pjumbo {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Balsamiq Sans', cursive;  
     font-size: 34px ;
 }
 
 .pjumbo2 {
-    font-family: 'Courgette', cursive;
-    font-weight: bold;
+    font-family: 'Balsamiq Sans', cursive;
+    /* font-family: 'Courgette', cursive; */
+    /* font-weight: bold; */
+    max-width: 800px;
     font-size: 20px;
 }
 
@@ -50,19 +47,47 @@ h5 {
 
 /* Button */
 .btn:hover {
-    background-color: #061DAB !important;
+    background-color: rgb(2, 157, 253) !important;
+    box-shadow: none;
 }
 
-.btn {
+.btnmulai {
     float: left;
     margin-right: 20px;
     color: black !important;
+    box-shadow: 10px 7px #101010;
     border-color: black !important;
-    border-radius: 20em !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
     background-color: #8ed1fcff !important;
+}
+
+.btnbuy {
+  color: black !important;
+  border-color: black !important;
+  box-shadow: 5px 5px #101010;
+  border-radius: 10px !important;
+  border-width: 2px !important;
+  background-color: #8ed1fcff !important;
 }
 /* end Button */
 
+/* Loading */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: whitesmoke;
+  display:flex;
+  z-index:9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-grow {
+  animation: loader 2s
+}
+/* end Loading */
 
 /* Switch */
   .switch-konten input {
@@ -73,6 +98,7 @@ h5 {
   .switch-konten span {
     border-radius: 35px;
     border-style: solid;
+    border-width: medium !important;
     border-color: transparent;
     padding-top: .75rem;
     padding-bottom: .75rem;
@@ -127,7 +153,8 @@ h5 {
 }
 
 .judulpaket {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: bold;
 }
 
 .card-title {
@@ -139,17 +166,25 @@ h5 {
 }
 
 .card {
-  box-shadow: 2px 6px 20px #101010;
+  box-shadow: 10px 7px #101010;
   border-radius: 2em !important;
+  border: 2px solid black !important;
+  padding-bottom: 20px;
+  transition: .3s
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 li {
   border-radius: 2em !important;
+  border: none !important;
 }
 
 .terakhirpaket {
-  font-family: 'Permanent Marker', cursive;
-  color: white;
+  font-family: 'Balsamiq Sans', cursive;
+  color: black;
 }
 /* end Style Paket */
 
@@ -165,10 +200,38 @@ li {
   .particle {
     font-family: 'Architects Daughter', cursive;
     font-size: 23px;
+    max-width: 500px;
   }
 
   .article h3 {
     font-family: 'Architects Daughter', cursive;
   }
+
+  .gif {
+    border-radius: 2em !important;
+  }
+
+  .article h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+  }
+
+  .article h3 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+  }
 /* article */
 
+
+/* Footer */
+
+footer {
+  margin-top: 200px;
+  background-image: url('svg/wavefooter.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* end Footer */
+
+/*  */
