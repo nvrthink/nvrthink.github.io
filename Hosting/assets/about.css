@@ -23,6 +23,10 @@
     font-weight: bold;
 }
 
+.jumbotron p {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
 
 /* end Jumbotron */
 
@@ -43,3 +47,54 @@ footer {
     background-size: cover;
   }
   /* end Footer */
+
+  /* modal */
+.modal-dialog {
+    top: 20%;
+    box-shadow: 10px 3px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}
+
+.modal-body input {
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}
+
+.btnlogin {
+    box-shadow: 10px 3px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}
+.btnclose {
+  float: right;
+  margin-right: 20px;
+  box-shadow: 10px 3px #101010;
+  border-color: black !important;
+  border-radius: 10px !important;
+  border-width:  2px !important;
+}
+/* modal */
+
+/* about */
+
+h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+}
+#about p {
+    font-weight: bold;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#about img,p {
+    transition: .3s
+}
+
+#about img:hover {
+    transform: scale(1.2);
+}
+/* end About */

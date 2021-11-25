@@ -42,7 +42,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Login To YOur account</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Login To Your account</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -60,8 +60,8 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="passFunc()">
                     <label class="form-check-label" for="exampleCheck1">Show Password</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btnlogin btn btn-primary">Sign in</button>
+                    <button type="button" class="btnclose btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   </form>
             </div>
           </div>
@@ -88,7 +88,7 @@
                         <a class="nav-link text-black fs-4" href="aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item-media">
-                        <a class="nav-link text-black fs-4" href="#paketwebhost">Price</a>
+                        <a class="nav-link text-black fs-4" href="#paketanplan">Price</a>
                     </li>
                     <li class="nav-item dropdown fs-4">
                         <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
@@ -149,7 +149,7 @@
 
                         <!-- dropdown on sm -->
                         <div class="dropdown d-md-none d-lg-none d-xl-none">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btndrop btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                              Pilih Paket
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -178,7 +178,7 @@
     <!-- Plan -->
 
     <!-- Paket web Hosting -->
-    <div class="backgroundpaket">
+    <div id="paketanplan" class="backgroundpaket">
         <div class="paket pt-5" id="paketwebhost">
             <div class="paketanweb container">
                 <div class="row text-center">
@@ -286,10 +286,11 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 mb-2">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Shared Hosting Single</h5>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">WordPress Single</h5>
                                 <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
                                 <h3 class="text-center">Rp 12,900/bln</h3>
+                                <a class="btnbuy btn btn-sm mb-2" href="#" role="button">Masukan Keranjang</a>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
@@ -304,32 +305,37 @@
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>2 Database</li>
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                                <li class="list-group-item"><i class="bi bi-x-lg text-danger"></i> Jetpack Free</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Multiple Data Center</li>
                             </ul>
                         </div>
                     </div>
             
                     <div class="col-md-4 mb-2">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Shared Hosting Single</h5>
-                                <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                                <h3 class="text-center">Rp 12,900/bln</h3>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">WordPress Starter</h5>
+                                <p class="card-text text-center pt-2">Untuk website pribadi</p>
+                                <h3 class="text-center">Rp 29,900/bln</h3>
+                                <a class="btnbuy btn btn-sm mb-2" href="#" role="button">Masukan Keranjang</a>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 1 Website</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>30 GB SSD Storage</li>
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~10000 Kunjungan Bulanan</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~25000 Kunjungan Bulanan </li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Domain Gratis (senilai Rp 139,900)</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Google Ads Credit</li>
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Bandwidth 100 GB</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> Unlimited Bandwidth</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Managed WordPress</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Multisite</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WP-CLI </li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jetpack Free</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Multiple Data Center </li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSH Access</li>
                             </ul>
                         </div>
@@ -337,14 +343,15 @@
             
                     <div class="col-md-4 mb-2">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Shared Hosting Single</h5>
-                                <p class="card-text text-center pt-2">Pilihan terbaik bagi user pemula</p>
-                                <h3 class="text-center">Rp 12,900/bln</h3>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">WordPress Bisnis</h5>
+                                <p class="card-text text-center pt-2">Cocok untuk usaha kecil</p>
+                                <h3 class="text-center">Rp 49,900/bln</h3>
+                                <a class="btnbuy btn btn-sm mb-2" href="#" role="button">Masukan Keranjang</a>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i> 100 Website</li>
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>100 GB SSD Storage</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>200 GB SSD Storage</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>~100000 Kunjungan Bulanan</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Gratis Email</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSL gratis (senilai Rp 174,355)</li>
@@ -355,7 +362,13 @@
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Acceleration</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
-                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>GIT Access</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WordPress Multisite</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>WP-CLI </li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jaminan 30 Hari Uang Kembali</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Unlimited Database</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Jetpack Free</li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Multiple Data Center </li>
+                                <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>SSH Access</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>Backup Harian (senilai Rp 124,548)</li>
                                 <li class="list-group-item"><i class="bi bi-check text-success fs-4"></i>CDN Gratis (senilai Rp 108,709)</li>
                             </ul>
@@ -383,7 +396,7 @@
                     <h3 class="pt-5 text-secondary">MUDAH DAN INTUITIF</h3>
                     <h1 class="pt-3">Kemudahan setup</h1>
                     <p class="particle pt-4">Hanya dengan sekali klik, website Anda siap online. Dapatkan kemudahan untuk semua hal yang Anda butuhkan.</p>
-                    <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/ezgif.com-gif-maker.gif" alt="Mudah setup" style="width: 450px;">
+                    <img class="gif d-md-none d-lg-none d-xl-none img-fluid pe-3" src="assets/gif/ezgif.com-gif-maker.gif" alt="Mudah setup" style="width: 450px;">
                 </div>
 
                 <div class="col-md-6 d-none d-sm-none d-md-block">
@@ -405,7 +418,7 @@
                             <h3 class="text-secondary">PERFORMA DAN KECEPATAN</h3>
                             <h1>Kurangi waktu loading</h1>
                             <p class="particle pt-4">Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.</p>
-                            <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
+                            <img class="gif d-md-none d-lg-none d-xl-none img-fluid pe-3" src="assets/gif/fast.gif" alt="Loading lebih cepat" style="width: 450px;">
 
                         </div>
                 </div> 
@@ -418,7 +431,7 @@
                         <h1 class="pt-3">WordPress Mudahkan Segalanya</h1>
                         <p class="particle pt-4 fs-5">Install WordPress otomatis dengan tool 1-click installer dan mulailah membuat website. Untuk memastikan keandalan, keamanan, dan kecepatan web, backend WordPress dilengkapi dengan LiteSpeed caching dan tool optimasi tingkat lanjut.</p>
 
-                    <img class="gif d-md-none d-lg-none d-xl-none img-fluid" src="assets/gif/wordpressbuild.gif" alt="Wordpress Build" style="width: 500px;">
+                    <img class="gif d-md-none d-lg-none d-xl-none img-fluid pe-3" src="assets/gif/wordpressbuild.gif" alt="Wordpress Build" style="width: 500px;">
                     
                 </div>
 
@@ -452,7 +465,12 @@
     </div>
     <!-- end kelebihan -->
 
-
+<!-- float button -->
+<a href="#" class="float">
+    <i class="bi bi-arrow-up-circle fs-1"></i>
+    </a>
+  
+  <!-- float button -->
      <!-- Footer -->
     
      <footer>
@@ -480,14 +498,14 @@
                   Useful links
                 </h6>
                 <p>
-                  <a href="#aboutus" class="text-black fs-5">About us</a>
+                  <a href="aboutus.html" class="text-black fs-5">About us</a>
                 </p>
                 <p>
-                  <a href="#menus" class="text-black fs-5">Menu</a>
+                  <a href="#paketanplan" class="text-black fs-5">Plan</a>
                   
                 </p>
                 <p>
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="text-black fs-5">Register</a>
+                  <a href="register.html" class="text-black fs-5">Register</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -516,7 +534,7 @@
         <!-- Copyright -->
         <div class="text-center p-4">
           © 2021 Copyright:
-          <a class="text-reset fw-bold" href="#">Created By Kelompok 1</a>
+          <a class="text-reset fw-bold" href="#">Created By Kelompok 5</a>
         </div>
         <!-- Copyright -->
       </footer>

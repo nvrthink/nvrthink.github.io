@@ -6,6 +6,22 @@
 }
 /* End Navbar */
 
+/* modal */
+.modal-dialog {
+    top: 20%;
+    box-shadow: 10px 3px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border: solid 2px black;
+}
+
+.modal-body input {
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}
+/* modal */
+
 /* Jumbotron */
 
 .jumbotron {
@@ -51,6 +67,14 @@ h5 {
     box-shadow: none;
 }
 
+.btndrop {
+    box-shadow: 10px 7px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+    background-color: #8ed1fcff !important;
+}
+
 .btnmulai {
     float: left;
     margin-right: 20px;
@@ -62,6 +86,20 @@ h5 {
     background-color: #8ed1fcff !important;
 }
 
+.btnlogin {
+    box-shadow: 10px 3px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}
+.btnclose {
+  float: right;
+  margin-right: 20px;
+  box-shadow: 10px 3px #101010;
+  border-color: black !important;
+  border-radius: 10px !important;
+  border-width:  2px !important;
+}
 .btnbuy {
   color: black !important;
   border-color: black !important;
@@ -234,4 +272,18 @@ footer {
 }
 /* end Footer */
 
-/*  */
+/* float */
+.float {
+  position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#8ed1fcff;
+	color:black;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 10px 3px #101010;
+  border-color: black !important;
+  border: solid 2px black;
+}

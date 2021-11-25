@@ -10,6 +10,15 @@ input {
     border-color: black !important;
     border-width:  1px !important;
 }
+
+.eyes {
+    border-color: black !important;
+    border-width:  1px !important;
+}
+
+h3 {
+    font-family: 'Balsamiq Sans', cursive;
+}
 /* end card */
 
 .btn {
@@ -18,3 +27,19 @@ input {
     border-radius: 10px !important;
     border-width:  2px !important;
 }
+
+.btnlogin {
+    box-shadow: 10px 3px #101010;
+    border-color: black !important;
+    border-radius: 10px !important;
+    border-width:  2px !important;
+}
+.btnclose {
+  float: right;
+  margin-right: 20px;
+  box-shadow: 10px 3px #101010;
+  border-color: black !important;
+  border-radius: 10px !important;
+  border-width:  2px !important;
+}
+

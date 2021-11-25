@@ -27,7 +27,40 @@
   <body>
 
   <body>
-            
+    
+        <!-- Modal Login -->
+
+        <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login To Your account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" required>
+                      </div>
+                      <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="passFunc()">
+                      <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                      </div>
+                      <button type="submit" class="btnlogin btn btn-primary">Sign in</button>
+                      <button type="button" class="btnclose btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <!-- End Modal Login -->
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #8ed1fcff;">
       <!-- <div class="container"> -->
@@ -44,12 +77,12 @@
                   <a class="nav-link text-black fs-4" href="aboutus.html">About Us</a>
               </li>
               <li class="nav-item-media">
-                  <a class="nav-link text-black fs-4" href="index.html#paketwebhost">Price</a>
+                  <a class="nav-link text-black fs-4" href="index.html#paketanplan">Price</a>
               </li>
               <li class="nav-item dropdown fs-4">
                   <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a></li>
                     <li><a class="dropdown-item" href="#">Register</a></li>
                   </ul>
               </li>
@@ -72,9 +105,14 @@
       <div class="col-md-4 mb-2">
           <div class="card">
               <div class="card-body justify-content-center text-center">
-                  <img src="assets/img/sign-up.png" class="img-fluid" alt="sign-up logo" width="100">
+                  <img src="assets/img/sign-up.png" class="img-fluid text-center" alt="sign-up logo" width="100">
+                  <h3 class="pt-4"> Register New User</h3>
                 </div>  
               <div class="register justify-content-center">
+                <label for="exampleInputUsername1" style="padding-left: 20px;" class="form-label">Full name</label>
+                <div class="input-group mb-3 ps-3 pe-3">
+                  <input type="text" class="form-control" placeholder="Full name" aria-label="Username" aria-describedby="basic-addon1" req>
+                </div>
                 <label for="exampleInputUsername1" style="padding-left: 20px;" class="form-label">Username</label>
                 <div class="input-group mb-3 ps-3 pe-3">
                   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -83,15 +121,16 @@
                   <div class="input-group mb-3 ps-3 pe-3">
                     <input type="email" class="form-control" placeholder="E-Mail" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
-                <label for="exampleInputPassword1" style="padding-left: 20px;" class="form-label">Password</label>
+                <label for="passwordregister" style="padding-left: 20px;" class="form-label">Password</label>
                   <div class="passwordgroup input-group mb-3 ps-3 pe-3">
-                    <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
-                    <span class="input-group-text"><i>
+                    <input type="password" class="form-control" placeholder="Password" id="passwordregister">
+                    <span class="eyes input-group-text"><i>
                       <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </i></span>
-                  </div>              
-                  <div class="submit text-center">
-                <button class="btn btn-primary mb-2" type="submit">Sign Up</button> 
+                  </div>  
+                  <a href="#" class="link-primary ps-3" data-bs-toggle="modal" data-bs-target="#loginmodal">Sudah punya akun ? Silahkan Login</a>            
+                  <div class="submit text-center pt-3">
+                  <button class="btn btn-primary mb-2" type="submit">Sign Up</button> 
                   </div> 
               </div>   
           </div>
@@ -126,5 +165,6 @@
   
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="assets/register.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 </html>
