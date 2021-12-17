@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Architects+Daughter&family=Playfair+Display:ital,wght@0,400;1,600&family=Mochiy+Pop+One&family=Oleo+Script&family=Anton&&family=Assistant:wght@200&family=Permanent+Marker&family=Balsamiq+Sans&family=Courgette&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Architects+Daughter&family=Fira+Sans+Extra+Condensed:wght@200&family=Playfair+Display:ital,wght@0,400;1,600&family=Mochiy+Pop+One&family=Oleo+Script&family=Anton&&family=Assistant:wght@200&family=Pacifico&family=Permanent+Marker&family=Balsamiq+Sans&family=Courgette&family=Oleo+Script&display=swap" rel="stylesheet">
     
     <!-- End Google Fonts -->
 
@@ -62,41 +62,54 @@
   
       <!-- End Modal Login -->
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #8ed1fcff;">
-      <!-- <div class="container"> -->
-          <a class="navbar-brand1 ps-5" href="index.html">
-                  <img src="assets/img/logo.png" width="80" height="80" alt="Web logo">
-          </a>
-          <a class="navbar-brand fs-2 ps-3" href="index.html">Dream Host</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <a class="nav-link text-black fs-4" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item-media">
-                  <a class="nav-link text-black fs-4" href="index.html#paketwebhost">Price</a>
-              </li>
-              <li class="nav-item dropdown fs-4">
-                  <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a></li>
-                    <li><a class="dropdown-item" href="#">Register</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <a class="carticon navbar-brand" href="#">
-                      <i class="bi bi-cart3 ps-2 fs-2"></i>
-                      Cart
-                  </a>
-                  
-              </li>
-              </ul>
-              
-          </div>
-      <!-- </div> -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #8ed1fcff;">
+        <!-- <div class="container"> -->
+            <a class="navbar-brand1 ps-5" href="#">
+                    <img src="assets/img/logo.png" width="80" height="80" alt="Web logo">
+            </a>
+            <a class="navbar-brand fs-2 ps-3" href="#" style="font-family: 'Fira Sans Extra Condensed', sans-serif;">Dream Host</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-4 pe-5" href="aboutus.html" style="font-family: 'Pacifico', cursive;">About Us</a>
+                </li>
+                <li class="nav-item-media">
+                    <a class="nav-link text-black fs-4 pe-5" href="#paketanplan" style="font-family: 'Pacifico', cursive;">Price</a>
+                </li>
+
+                <li class="nav-item dropdown fs-4 pe-5" style="font-family: 'Pacifico', cursive;">
+                    <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-cart3"></i> Cart</a>
+                    <ul class="dropdown-menu cart">
+                      <li>
+                        <div class="container containercart">
+                            <a class="dropdown-item">
+                                <p class="pt-3">Shared Hosting Single</p>
+                                <p>Rp. 12.900</p>
+                            </a>
+                            <div class="ps-3">
+                            <button class="btn btn-xs btn-danger pull-right">Remove</button>
+                            </div>
+                          <hr>
+                        </div>
+                      </li>
+                      <li class="text-center"><a class="btn btn-primary" href="#" role="button">View cart</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown fs-4 pe-5" style="font-family: 'Pacifico', cursive;">
+                    <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login</a></li>
+                      <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    </ul>
+                </li>
+
+                </ul>
+            </div>
+        <!-- </div> -->
     </nav>
 <!-- end Navbar -->
 

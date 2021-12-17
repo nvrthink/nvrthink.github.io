@@ -1,4 +1,19 @@
 
+/* Cart */
+.cart span, p{
+    font-family: 'Balsamiq Sans', cursive;
+  }
+  
+  .cart {
+    min-width:300px !important;
+  }
+  
+  .containercart button {
+    font-size: 10px !important;
+  }
+  
+  /* end Cart */
+  
 /* card */
 .card {
     border: 3px solid black !important;
