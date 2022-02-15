@@ -1,457 +1,79 @@
+/* Jumbotron */
 .jumbotron {
-    background-color: #fccfa6;
-    background-image: url('/assets/img/svg/twicewave.svg');
+    background-image: url(/assets/gif/twicebg.gif) ;
+    background-size: cover; 
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    height: 100vh;
 }
 
-.warning {
-    position: absolute;
-    top: 50%;
-    right: 1% !important;
-    font-family: 'Lobster', cursive;
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
 }
 
-.warning h1 {
-    font-size: 40px;
-    color: white;
+.jumbotron h1,p {
+    font-family: 'VT323', monospace;
 }
 
-.logo {
-    padding-right: 300px !important;
+.jumbotron .nes-container {
+    background-color: white;
 }
-.icontw {
-    width: 300px;
-} 
+/* end Jumbotron */
 
-img {
-    position: absolute;
-    transition: 0.5s;
-    opacity: 1;
-}
-
-.memberimg {
-    filter: grayscale(100%);
-    opacity: 0;
+/* about us */
+.bagian2 {
+    background-image: url(/assets/gif/aboutus.gif) ;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-.memberimg:hover {
-    filter: grayscale(0%);
-}
-.memberimg.nyala {
-    opacity: 1;
+.bagian2 h1 {
+    font-size: 80px;
+    font-family: 'VT323', monospace;
 }
 
-img:hover {
-    filter: grayscale(0%);
-}
-
-
-/* nayeon */
-.nayeon h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 6%;
-    transition: .3s;
-}
-
-.nayeon:hover h1{
-    opacity: 1;
-    bottom: 500px;
-}
-.nayeon img {
-    z-index: 102;
-    width: 330px;
-    bottom: 0;
-    left: 0;
-}
-
-.kotaknayeon {
-    background-color: lightblue;
-    position: absolute;
-    z-index: -999;
-    top: 0;
-    bottom: 0;
-    transition: .8s;
-    left: 4500px;
-    right: 0;
+#boxme {
+    padding: 20px;
+    background: #eaeaea;
+    max-width: 500px;
+    margin: 50px auto;
+    transition: 3s;
+    max-height: 0;
     overflow: hidden;
 }
 
+#boxme.buka {
+    max-height: 500px;
+}
 
-.kotaknayeon.hidup {
-    background-image: url('/assets/img/svg/nayeonwave.svg');
+.isiabout {
+    padding-top: 20%;
+}
+
+
+/* end About us */
+
+/* member */
+.bagian3 {
+    background-image: url(/assets/gif/member.gif) ;
+    background-size: cover; 
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 999;
-    left: 0;
+    overflow: auto;
+    height: 100vh;
 }
 
-.cardnayeon p, .cardnayeon2 p {
-    font-family: 'Fredoka One', cursive;
+.bagian3 .nes-container {
+    background-color: white;
 }
 
-.cardnayeon2 {
-    overflow: visible;
-    height: auto !important;
+.bagian3::-webkit-scrollbar {
+    display: none;
 }
-
-.nayeonfoto {
-    filter: grayscale(0%);
-}
-
-.nayeonkiri1 {
-    z-index: 3001;
-    padding-right: 210px !important;
-}
-
-.nayeonkiri1 img {
-    margin-top: 100px;
-}
-
-.nayeonkiri2 {
-    z-index: 3000;
-    margin-left: 200px !important;
-}
-
-.closenayeonbox {
-    padding-left: 170px;
-}
-
-.closenayeonbox img {
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-/* end nayeon */
-
-/* jeongyeon */
-
-.jeongyeon img {
-    position: absolute;
-    z-index: 101;
-    bottom: 0;
-    left: 11%;
-    width: 330px;
-}
-.jeongyeon h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 15%;
-    transition: .3s;
-}
-.jeongyeon:hover h1{
-    opacity: 1;
-    bottom: 480px;
-}
-
-.kotakjeongyeon {
-    background-color: lightgreen;
-    position: absolute;
-    z-index: -999;
-    top: 0;
-    bottom: 0;
-    transition: .8s;
-    left: 4500px;
-    right: 0;
-    overflow: hidden;
-}
-
-.kotakjeongyeon.hidup {
-    background-image: url('/assets/img/svg/jeongyeonnwave.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 999;
-    left: 0;
-}
-
-.cardjeongyeon p, .cardjeongyeon2 p {
-    font-family: 'Fredoka One', cursive;
-}
-
-.cardjeongyeon2 {
-    overflow: visible;
-    height: auto !important;
-}
-
-.jeongyeonfoto {
-    filter: grayscale(0%);
-}
-
-.jeongyeonkiri1 {
-    z-index: 3001;
-    padding-right: 210px !important;
-}
-
-.jeongyeonkiri1 img {
-    margin-top: 100px;
-}
-
-.jeongyeonkiri2 {
-    z-index: 3000;
-    margin-left: 100px !important;
-}
-
-.closejeongyeonbox {
-    padding-left: 170px;
-}
-
-.closejeongyeonbox img {
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-/* end jeongyeon */
-
-
-/* Momo */
-
-
-.momo h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 26%;
-    transition: .3s;
-}
-.momo:hover h1{
-    opacity: 1;
-    bottom: 500px;
-}
-
-
-.momo img {
-    position: absolute;
-    z-index: 105;
-    bottom: 0;
-    width: 210px;
-    left: 23%;
-}
-
-/* end Momo */
-
-
-/* Sana */
-
-.sana h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 35%;
-    transition: .3s;
-}
-.sana:hover h1{
-    opacity: 1;
-    bottom: 480px;
-}
-
-
-.sana img {
-    bottom: 0;
-    position: absolute;
-    z-index: 106;
-    width: 340px;
-    left: 30%;
-}
-
-/* end Sana */
-
-/* JIhyo */
-
-.jihyo {
-    overflow: hidden;
-}
-
-.jihyo h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 49%;
-    transition: .3s;
-}
-.jihyo:hover h1{
-    opacity: 1;
-    bottom: 500px;
-}
-
-
-.jihyo img {
-    position: absolute;
-    bottom: 0;
-    left: 43%;
-    width: 350px;
-    z-index: 104;
-}
-
-/* end Jihyo */
-
-
-/* Mina */
-
-.mina h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 61%;
-    transition: .3s;
-}
-.mina:hover h1{
-    opacity: 1;
-    bottom: 530px;
-}
-
-
-.mina img {
-    bottom: 0;
-    width: 370px;
-    left: 53%;
-}
-
-
-/* Mina */
-
-/* dahyun */
-.dahyun h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 71%;
-    transition: .3s;
-}
-.dahyun:hover h1{
-    opacity: 1;
-    bottom: 500px;
-}
-
-
-.dahyun img {
-    position: absolute;
-    z-index: 201;
-    bottom: 0;
-    width: 350px;
-    left: 65%;
-}
-
-.kotakdahyun {
-    background-color: salmon;
-    position: absolute;
-    z-index: -999;
-    top: 0;
-    bottom: 0;
-    transition: .8s;
-    left: 4500px;
-    right: 0;
-    overflow: hidden;
-}
-
-.kotakdahyun.hidup {
-    background-image: url('/assets/img/svg/dahyunwave.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 999;
-    left: 0;
-}
-.card {
-    box-shadow: 10px 7px rgba(0, 0, 0, 0.10);
-    border-radius: 2em !important;
-    width: 400px;
-    height: 200px;
-    border: 0px;
-}
-
-.carddahyun p, .carddahyun2 p {
-    font-family: 'Fredoka One', cursive;
-}
-
-.carddahyun2 {
-    overflow: visible;
-    height: auto;
-}
-
-.cardahyun img {
-    left: -30%;
-    bottom: 1%;
-    width: 300px;
-}
-.dahyunfoto {
-    filter: grayscale(0%);
-}
-
-.dahyunkiri1 {
-    z-index: 3001;
-    padding-right: 210px !important;
-}
-
-.dahyunkiri2 {
-    z-index: 3000;
-    margin-left: 100px !important;
-}
-
-.closedahyunbox {
-    padding-left: 170px;
-}
-
-.closedahyunbox img {
-    border: 2px solid black;
-    border-radius: 50%;
-}
-/* end dahyun */
-
-/* Chaeyoung */
-.chaeyoung h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 80%;
-    transition: .3s;
-}
-.chaeyoung:hover h1{
-    opacity: 1;
-    bottom: 500px;
-}
-
-
-.chaeyoung img {
-    position: absolute;
-    bottom: 0;
-    width: 350px;
-    left: 74%;
-}
-
-/* end Chaeyoung */
-
-
-/* Tzuyu */
-.tzuyu h1 {
-    opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 91%;
-    transition: .3s;
-}
-.tzuyu:hover h1{
-    opacity: 1;
-    bottom: 510px;
-}
-
-
-.tzuyu img {
-    position: absolute;
-    bottom: 0;
-    width: 180px;
-    left: 90%;
-}
-
-/* end Tzuyu */
-
-
-.member h1{
-    font-family: 'Fredoka One', cursive;
-}
+/* end Member */

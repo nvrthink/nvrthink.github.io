@@ -1,41 +1,16 @@
-$(window).on('load', function() {
-    // parallax jumbotron
-    // $('.table').addClass('nyala'); 
+$(window).scroll(function() {
+    var wScroll = $(this).scrollTop();
 
-    $('.memberimg').each(function(i){
-        setTimeout(function(){
-            $('.memberimg').eq(i).addClass('nyala');
-        }, 500 * (i+1));
-    });
+    if(wScroll > $ ('.bagian2').offset().top - 5) {
+        $('.boxaku').addClass('buka');
+    }
+    // 
 });
-
 
 $(document).ready(function(){ 
 
-    $('#dahyunah').click(function(){
-       $('.kotakdahyun').addClass('hidup')
+    $('#has').click(function(){
+       $('.membertw img').addClass('nyala')
     });
-
-    $('.closedahyun').click(function(){
-        $('.kotakdahyun').removeClass('hidup')
-     });
-
-    $('#nayeonah').click(function(){
-        $('.kotaknayeon').addClass('hidup')
-    });
- 
-    $('.closenayeon').click(function(){
-         $('.kotaknayeon').removeClass('hidup')
-    });
-
-    $('#jeongyeonah').click(function(){
-        $('.kotakjeongyeon').addClass('hidup')
-    });
- 
-    $('.closejeongyeon').click(function(){
-         $('.kotakjeongyeon').removeClass('hidup')
-    });
-    
-  
 
 });
