@@ -1,6 +1,6 @@
 /* Jumbotron */
 .jumbotron {
-    background-image: url(/assets/gif/twicebg.gif) ;
+    background-image: url("/assets/gif/twicebg.gif") ;
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
@@ -24,7 +24,7 @@
 
 /* about us */
 .bagian2 {
-    background-image: url(/assets/gif/aboutus.gif) ;
+    background-image: url("/assets/gif/aboutus.gif") ;
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
