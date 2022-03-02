@@ -1,6 +1,6 @@
 /* Jumbotron */
 .jumbotron {
-    background-image: url("/assets/gif/twicebg.gif") ;
+    background-image: url("../gif/twicebg.gif") ;
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
@@ -17,6 +17,20 @@
     font-family: 'VT323', monospace;
 }
 
+.judul {
+    font-size: 70px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+}
+
+.lead {
+    font-size: 70px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+}
+
 .jumbotron .nes-container {
     background-color: white;
 }
@@ -24,7 +38,7 @@
 
 /* about us */
 .bagian2 {
-    background-image: url("/assets/gif/aboutus.gif") ;
+    background-image: url("../gif/aboutus.gif") ;
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
@@ -60,7 +74,7 @@
 
 /* member */
 .bagian3 {
-    background-image: url(/assets/gif/member.gif) ;
+    background-image: url(../gif/member.gif) ;
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
