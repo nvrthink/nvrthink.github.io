@@ -1,0 +1,81 @@
+.jumbotron {
+    background-image: url("images/aboutus.gif") ;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1,p {
+    font-family: 'VT323', monospace;
+}
+
+.judul {
+    padding-top: 30vh;
+}
+
+.bagian2 {
+    background-image: url("images/member.gif") ;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#boxme {
+    background: #eaeaea;
+}
+
+.isiabout {
+    padding-top: 30vh;
+}
+
+.boxclick {
+    background: #eaeaea;
+}
+
+.textabout {
+    font-size: 70px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+}
+
+.bagian3 {
+    background-image: url("images/bros.gif") ;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.textprice {
+    font-size: 70px;
+    -webkit-text-fill-color: black;
+}
+
+table {
+    width: 100%;
+}
+
+
+.bagian4 {
+    background-image: url("images/belajar.gif") ;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.boxaku {
+    background: #eaeaea;
+}
+
+.textcontact {
+    font-size: 50px;
+    padding-top: 30vh;
+}
